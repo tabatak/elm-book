@@ -52,7 +52,7 @@ update msg model =
             { model
               -- 入力文字列をリセット
                 | input = ""
-                , memos = model.input :: model.memos
+                , memos = (model.input ++ "++") :: model.memos
             }
 
 
